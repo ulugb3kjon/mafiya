@@ -1,0 +1,170 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    margin: 0;
+  }
+  
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: unset;
+    display: inline-block;
+  }
+  
+  button {
+    cursor: pointer;
+    border: none;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-image: url("../imgs/4k.jpg"); /* Rasm manzili */
+    background-size: cover; /* Rasm ekranni to‘liq qoplaydi */
+    background-position: center; /* Markazga joylashadi */
+    background-repeat: no-repeat; 
+  }
+  
+  .container {
+    max-width: 1240px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  :root {
+    --font-family: "Fraunces 9pt", sans-serif;
+    --second-family: "Barlow", sans-serif;
+    --third-family: "Fraunces", sans-serif;
+  }
+  .header_title{
+    color: #797474;
+    font-size:xx-large;
+  }
+  .header_btn{
+    display: inline-block;
+    border-radius: 20px;
+    width: 217px;
+    height: 56px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 139%;
+    text-align: center;
+    color: #fefcf7;
+    background: #0e8784;
+  }
+  .header_blok{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .text{
+    color: #000000;
+  }
+  .hero{
+    margin-top: 20px;
+    padding: 20px 20px;
+    background-color: #0f6363;
+  }
+
+  .guruh{
+    display: block;
+    border-radius: 20px;
+    width: 217px;
+    height: 56px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 139%;
+    text-align: center;
+    color: #fefcf7;
+    background: #0e8784;
+  }
+  .kanal{
+    display: block;
+    border-radius: 20px;
+    width: 217px;
+    height: 56px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 139%;
+    text-align: center;
+    color: #fefcf7;
+    background: #0e8784;
+    padding-top: 15px;
+  }
+  .buttons{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  @media (max-width: 768px) {
+    .header_blok {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 15px;
+    }
+  
+    .header_title {
+      font-size: 20px;
+      padding: 0 10px;
+    }
+  
+    .header_btn,
+    .guruh,
+    .kanal {
+      width: 90%;
+      max-width: 300px;
+      font-size: 16px;
+      height: auto;
+      padding: 12px 0;
+    }
+  
+    .hero {
+      margin-top: 15px;
+      padding: 15px 10px;
+    }
+  
+    .text {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #fff;
+    }
+  
+    .buttons {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      padding-top: 15px;
+    }
+  
+    .container {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  
